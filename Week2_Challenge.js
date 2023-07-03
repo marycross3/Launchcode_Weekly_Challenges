@@ -14,3 +14,6 @@ function FirstReverse(str) {
 let phrase = input.question("Enter a phrase: ")
 
 console.log(FirstReverse(phrase));
+
+//run in terminal using
+//node --inspect Week2_Challenge.js
