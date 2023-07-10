@@ -14,4 +14,6 @@ function findChar(char, word){
     return count;
 }
 
+
 console.log(findChar('o', 'Old man yells at cloud'))
+

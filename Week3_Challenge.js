@@ -1,11 +1,16 @@
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+    });
+    
 function LongestWord(sen) { 
-
+        
     // code goes here  
     sen = sen.split(" ");
     let index = 0;
     
     let longestWord = sen[0];
-    console.log(sen);
+    //console.log(sen);
     while (index < sen.length){
         let count = 0;
         word = sen[index].split("")
@@ -23,4 +28,7 @@ function LongestWord(sen) {
 }
     
 // keep this function call here 
-console.log(LongestWord(readline()));
+readline.question('Enter a phrase', sen => {
+    console.log(LongestWord(sen));
+    readline.close();
+});
